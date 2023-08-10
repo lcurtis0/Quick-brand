@@ -4,10 +4,7 @@ const CLI = require('./lib/cli.js');
 
 const newCLI = new CLI();
 
-newCLI.textFunction();
-
-newCLI.shapeFunction();
-
+newCLI.textshapeFunction();
 
 /*Text, Shapeselect*/
 
