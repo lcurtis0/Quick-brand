@@ -1,12 +1,14 @@
-const Creation = require('./lib/cli.js');
-
-const newCreation = new Creation();
-
-newCreation.textFunction();
-
-newCreation.shapeFunction();
 
 
+const CLI = require('./lib/cli.js');
 
+const newCLI = new CLI();
+
+newCLI.textFunction();
+
+newCLI.shapeFunction();
+
+
+/*Text, Shapeselect*/
 
 
