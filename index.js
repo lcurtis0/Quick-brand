@@ -6,6 +6,5 @@ const newCLI = new CLI();
 
 newCLI.textshapeFunction();
 
-/*Text, Shapeselect*/
 
 
