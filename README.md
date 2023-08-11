@@ -26,7 +26,7 @@ Users must fill out a series of questions after entering node index.js
 
 Here is the video
 
-
+https://screenpal.com/watch/c0jXebVkSrX
 
 # Credits
 
