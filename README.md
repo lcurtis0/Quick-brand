@@ -1,96 +1,50 @@
-# Quick-brand
+# Quick-brand (challenge-10)
+
+# Description
+
+This files are created to complete the Module 10 challenge-10
+
+I want to have a svg logo generator.
+
+This is so that users can quickly create a vector logo to save time.
+
+I learned that class functions have a huge potental for creating items and inputting data
+
+Table of Contents
+- [Description](#Decription)
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [Credits](#Credits)
+- [License](#License)
+- [Deployment](#Deployment)
+
+N/A
+
+# Usage
+
+Users must fill out a series of questions after entering node index.js
+
+Here is the video
 
 
-├── examples/           // Example svg file(s) created with the app
-├── lib/                // Folder for classes or functions
-    ├── shapes.js       // Exports `Triangle`, `Circle`, and `Square` classes
-    ├── shapes.test.js  // Jest tests for shapes
-    └── more...         // Additional files and tests
-├── .gitignore          // Indicates which folders and files Git should ignore
-├── index.js            // Runs the application using imports from lib/
-├── package.json
-└── README.md           // App description, link to video, setup and usage instructions   
 
-- ask input and list questions on index.js 
+# Credits
 
-- make init function that has a .then that send the info to a function in shapes.js file [generateMarkdown(answers)]
+Credit to w3.org for explaining vector images and svg code
+URL: https://www.w3.org/TR/SVG2/shapes.html#RectElement
 
-- In Shapes.js make function for each shape and color and return the value (cordanates) for each shape
+# License
 
-- In shapes.test.js use describe and it to test the shape value (arrange,act, assert)
+'![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)'
 
-const shape = new Triangle();
-shape.setColor("blue"); 
-expect(shape.render()).toEqual('<polygon points="150, 18 244, 182 56, 182" fill="blue" />');
+# Deployment
+Evaluated environment url: https://lcurtis0.github.io/Quick-brand/
 
-------------------------------------------------------------
+Badges
+N/A
 
-class ForumItem {
-  constructor(authorName, text, createdOn) {
-    this.authorName = authorName;
-    this.text = text;
-    this.createdOn = createdOn;
-  }
-}
+How to Contribute
+N/A
 
-class BlogPost extends ForumItem {
-  constructor(authorName, title, text, createdOn) {
-    super(authorName, text, createdOn);
-    this.title = title;
-    this.comments = [];
-  }
-
-  addComment(comment) {
-    this.comments.push(comment);
-  }
-}
-
-class Comment extends ForumItem {
-  constructor(authorName, text, createdOn, reaction) {
-    super(authorName, text, createdOn);
-    this.reaction = reaction;
-  }
-}
-
-const newPost = new BlogPost(
-  'John Doe',
-  'My Fourth Post',
-  'Dogs, cats, and snakes are super cute!',
-  '12/19/2021'
-);
-
-- If input was not a six digit number or color variety then throw error in Shape.js
-
-class BlogPost {
-  // Instantiates a BlogPost and validates input.
-  constructor(title, text, author, createdOn) {
-    if (title.length < 3) {
-      throw new Error('`title` must contain at least 3 characters.');
-    }
-
-    if (text.length < 3) {
-      throw new Error('`text` must contain at least 3 characters.');
-    }
-
-    // author must contain at least 3 characters, only have letters, numbers, and underscore. Author must begin with a
-    // letter.
-    if (!/[a-z][a-z0-9_]{2,}/i.test(author)) {
-      throw new Error(`Invalid author "${author}"`);
-    }
-  }
-}
-
-
-- Finally have svg file created with 
-
-<svg version="1.1"
-     width="300" height="200"
-     xmlns="http://www.w3.org/2000/svg">
-
-  <rect width="100%" height="100%" fill="red" />
-
-  <circle cx="150" cy="100" r="80" fill="green" />
-
-  <text x="150" y="125" font-size="60" text-anchor="middle" fill="white">SVG</text>
-
-</svg>
+Tests
+N/A
